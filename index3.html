@@ -9,10 +9,22 @@
 <body>
     <!-- Main attributes for forms - method (HOW) & action (WHERE) -->
     <!-- Get method will send the input into the the url and append it -->
-    <form method="get" action=""> 
+    <form method="get" action="search.html"> 
         <h4>GET Form</h4>
-        <input type="text" name="query">
-        <button>Submit!</button>
+        <input type="text" name="query1">
+        <button type="submit">Submit!</button>
+    </form>
+    <!-- Actively sends the data to the url specified -->
+    <form method="post" action="search.html"> 
+        <h4>POST Form</h4>
+        <input type="text" name="query2">
+        <button type="submit">Submit!</button>
+    </form>
+    <!-- Other inputs -->
+    <form> 
+        <h4>Other input types</h4>
+        <input type="checkbox" name="sport" value="snowboarding"><h5>Snowboarding</h5>
+        <input type="checkbox" name="sport" value="badminton"><h5>Badminton</h5>
     </form>
 </body>
 </html>
